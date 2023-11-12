@@ -63,7 +63,7 @@
             // 
             // bCalcular
             // 
-            bCalcular.Location = new Point(561, 249);
+            bCalcular.Location = new Point(459, 249);
             bCalcular.Name = "bCalcular";
             bCalcular.Size = new Size(159, 57);
             bCalcular.TabIndex = 8;

@@ -19,7 +19,7 @@ namespace prueba1SGL
             int numPalabras = 0;
             double coste;
             //Leo el telegrama
-            textoTelegrama = txtTelegrama.Text; 
+            textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
             if (rbUrgente.Checked)
                 tipoTelegrama = 'u';
