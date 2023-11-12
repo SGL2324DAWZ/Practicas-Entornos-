@@ -32,8 +32,9 @@
             txtTelegrama = new TextBox();
             label2 = new Label();
             bCalcular = new Button();
-            cbUrgente = new CheckBox();
             label1 = new Label();
+            rbOrdinario = new RadioButton();
+            rbUrgente = new RadioButton();
             SuspendLayout();
             // 
             // txtPrecio
@@ -62,23 +63,13 @@
             // 
             // bCalcular
             // 
-            bCalcular.Location = new Point(467, 266);
+            bCalcular.Location = new Point(561, 249);
             bCalcular.Name = "bCalcular";
             bCalcular.Size = new Size(159, 57);
             bCalcular.TabIndex = 8;
             bCalcular.Text = "Calcular";
             bCalcular.UseVisualStyleBackColor = true;
             bCalcular.Click += bCalcular_Click;
-            // 
-            // cbUrgente
-            // 
-            cbUrgente.AutoSize = true;
-            cbUrgente.Location = new Point(175, 266);
-            cbUrgente.Name = "cbUrgente";
-            cbUrgente.Size = new Size(91, 24);
-            cbUrgente.TabIndex = 7;
-            cbUrgente.Text = "Urgente?";
-            cbUrgente.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -89,16 +80,39 @@
             label1.TabIndex = 6;
             label1.Text = "Texto:";
             // 
+            // rbOrdinario
+            // 
+            rbOrdinario.AutoSize = true;
+            rbOrdinario.Location = new Point(175, 265);
+            rbOrdinario.Name = "rbOrdinario";
+            rbOrdinario.Size = new Size(93, 24);
+            rbOrdinario.TabIndex = 12;
+            rbOrdinario.TabStop = true;
+            rbOrdinario.Text = "Ordinario";
+            rbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rbUrgente
+            // 
+            rbUrgente.AutoSize = true;
+            rbUrgente.Location = new Point(274, 265);
+            rbUrgente.Name = "rbUrgente";
+            rbUrgente.Size = new Size(83, 24);
+            rbUrgente.TabIndex = 13;
+            rbUrgente.TabStop = true;
+            rbUrgente.Text = "Urgente";
+            rbUrgente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(rbUrgente);
+            Controls.Add(rbOrdinario);
             Controls.Add(txtPrecio);
             Controls.Add(txtTelegrama);
             Controls.Add(label2);
             Controls.Add(bCalcular);
-            Controls.Add(cbUrgente);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -113,7 +127,8 @@
         private TextBox txtTelegrama;
         private Label label2;
         private Button bCalcular;
-        private CheckBox cbUrgente;
         private Label label1;
+        private RadioButton rbOrdinario;
+        private RadioButton rbUrgente;
     }
 }

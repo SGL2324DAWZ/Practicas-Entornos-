@@ -17,11 +17,11 @@ namespace prueba1SGL
             string textoTelegrama;
             char tipoTelegrama = ' ';
             int numPalabras = 0;
-            double coste;  
+            double coste;
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (rbUrgente.Checked)
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Length;
@@ -41,6 +41,11 @@ namespace prueba1SGL
             else
                 coste = 0;
             txtPrecio.Text = coste.ToString() + " euros";
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
