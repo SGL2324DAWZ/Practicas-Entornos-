@@ -17,7 +17,7 @@ namespace prueba1SGL
             string textoTelegrama;
             char tipoTelegrama = ' ';
             int numPalabras = 0;
-            double coste;
+            double coste;  
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
