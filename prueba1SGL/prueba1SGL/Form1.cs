@@ -17,20 +17,24 @@ namespace prueba1SGL
             string textoTelegrama;
             char tipoTelegrama = ' ';
             int numPalabras = 0;
-            double coste;  
+            double coste;
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
             if (cbUrgente.Checked)
                 tipoTelegrama = 'u';
+            else
+                tipoTelegrama = 'o';
+
             //Obtengo el número de palabras que forma el telegrama
-            numPalabras = textoTelegrama.Length;
+            string[] palabras = textoTelegrama.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            numPalabras = palabras.Length;
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 25;
+                    coste = 2.5;
                 else
-                    coste = 0.5 * numPalabras;
+                    coste = 2.5 + 0.5 * numPalabras; //SGL2324
             else
             //Si el telegrama es urgente
             if (tipoTelegrama == 'u')
